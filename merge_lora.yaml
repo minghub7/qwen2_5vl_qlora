@@ -1,0 +1,12 @@
+### examples/merge_lora/llama3_lora_sft.yaml
+### model
+model_name_or_path: /data1/gkm/qwen_ft/model/qwen25_vl
+adapter_name_or_path: saves/qwen25_vl/qlora/sft
+template: qwen2_vl
+finetuning_type: lora
+
+### export
+export_dir: models/llama3_lora_sft
+export_size: 2
+export_device: cpu
+export_legacy_format: false
